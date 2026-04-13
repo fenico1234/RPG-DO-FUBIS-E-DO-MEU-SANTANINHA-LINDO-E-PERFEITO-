@@ -1,0 +1,76 @@
+{
+  "decks": [
+    {
+      "nome": "Elementos Básicos",
+      "cartas": [
+        { "tipo": "Ácido", "codigo": "DUM" },
+        { "tipo": "Água", "codigo": "QUAN" },
+        { "tipo": "Ar", "codigo": "AER" },
+        { "tipo": "Armas", "codigo": "IMPE" }
+      ]
+    },
+    {
+      "nome": "Corpo / Físico",
+      "cartas": [
+        { "tipo": "Cheiro", "codigo": "KAR" },
+        { "tipo": "Corpo", "codigo": "PHYS" },
+        { "tipo": "Dimensional", "codigo": "RAT" },
+        { "tipo": "Elétrico", "codigo": "TRIZ" }
+      ]
+    },
+    {
+      "nome": "Energia / Conceitos",
+      "cartas": [
+        { "tipo": "Emoção", "codigo": "BHAS" },
+        { "tipo": "Escuridão", "codigo": "TEN" },
+        { "tipo": "Fogo", "codigo": "IG" },
+        { "tipo": "Força", "codigo": "VIB" }
+      ]
+    },
+    {
+      "nome": "Estados / Abstratos",
+      "cartas": [
+        { "tipo": "Gravidade", "codigo": "YM" },
+        { "tipo": "Idioma", "codigo": "HIN" },
+        { "tipo": "Ilusão", "codigo": "ALUI" },
+        { "tipo": "Loucura", "codigo": "MOK" }
+      ]
+    },
+    {
+      "nome": "Luz / Ação",
+      "cartas": [
+        { "tipo": "Luz", "codigo": "LUM" },
+        { "tipo": "Magia", "codigo": "MAG" },
+        { "tipo": "Movimento", "codigo": "TUM" },
+        { "tipo": "Munição", "codigo": "SAG" }
+      ]
+    },
+    {
+      "nome": "Matéria / Efeitos",
+      "cartas": [
+        { "tipo": "Necrótico", "codigo": "NECRO" },
+        { "tipo": "Nojento-Secreção", "codigo": "APU" },
+        { "tipo": "Paladar", "codigo": "GUS" },
+        { "tipo": "Pedra", "codigo": "ROC" }
+      ]
+    },
+    {
+      "nome": "Fenômenos",
+      "cartas": [
+        { "tipo": "Radiação", "codigo": "CAND" },
+        { "tipo": "Reflexo-Espelho", "codigo": "KAN" },
+        { "tipo": "Sangue", "codigo": "HEM" },
+        { "tipo": "Som", "codigo": "MUL" }
+      ]
+    },
+    {
+      "nome": "Mundo Físico",
+      "cartas": [
+        { "tipo": "Sono", "codigo": "CYSG" },
+        { "tipo": "Tecido", "codigo": "TUNI" },
+        { "tipo": "Terra", "codigo": "MUN" },
+        { "tipo": "Velocidade", "codigo": "AST" }
+      ]
+    }
+  ]
+}

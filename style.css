@@ -1,0 +1,141 @@
+/* ================== BASE ================== */
+body {
+    margin: 0;
+    background: radial-gradient(circle at center, #0d0018, #000);
+    font-family: 'Cinzel', serif;
+    color: white;
+}
+
+/* CONTAINER */
+.container {
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* BOTÃO */
+.btn {
+    margin-top: 40px;
+    padding: 14px 24px;
+    background: linear-gradient(45deg, #ff3c00, #ff8800);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ================== DECK ================== */
+.deck {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+/* ================== CARD ================== */
+.card {
+    width: 160px;
+    height: 240px;
+    perspective: 1400px;
+    position: relative;
+}
+
+/* ================== INNER ================== */
+.inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+
+    /* 🔥 ESSENCIAL */
+    transform: rotateY(180deg);
+
+    transition: transform 0.6s ease, box-shadow 0.3s;
+}
+
+/* FLIP */
+.card.revelada .inner {
+    transform: rotateY(0deg);
+}
+
+/* ================== FACE ================== */
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    backface-visibility: hidden;
+}
+
+/* ================== FRENTE ================== */
+.frente {
+    background: linear-gradient(160deg, #ff3c00, #5a0000 60%, #2a0000);
+    border: 2px solid rgba(255, 200, 100, 0.6);
+
+    box-shadow:
+        inset 0 0 25px rgba(255,255,255,0.15),
+        0 10px 30px rgba(0,0,0,0.8);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+/* DETALHE */
+.frente::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* ================== VERSO ================== */
+.verso {
+    background: radial-gradient(circle, #3a0a50, #120018);
+    transform: rotateY(180deg);
+    border: 2px solid rgba(200,200,255,0.2);
+}
+
+/* ================== TEXTO ================== */
+.codigo {
+    font-size: 34px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.tipo {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ================== EFEITO AZUL ================== */
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%),
+        rgba(0, 180, 255, 0.25),
+        transparent 60%);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+/* ================== MODAL ================== */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    display: none;
+}
+
+.modal.ativo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

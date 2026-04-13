@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anátema - Sistema de Cartas</title>
+
+<!-- FONTE RPG -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🌌 BACKGROUND OVERLAY -->
+<div class="bg-overlay"></div>
+
+<!-- 🧠 CONTAINER -->
+<div class="container">
+
+    <!-- TÍTULO -->
+    <h1 id="titulo">Abrir Deck</h1>
+
+    <!-- DECK -->
+    <div id="deck" class="deck"></div>
+
+    <!-- BOTÃO -->
+    <button onclick="abrirDeck()" class="btn">
+        ✨ Abrir Pack Arcano
+    </button>
+
+</div>
+
+<!-- 🔍 MODAL (ZOOM) -->
+<div id="modal" class="modal" onclick="fecharZoom()"></div>
+
+<!-- ⚡ SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
