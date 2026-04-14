@@ -9,35 +9,52 @@
 <!-- FONTE RPG -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 
+<!-- ÍCONES (para barra AAA) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <!-- CSS -->
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- 🌌 BACKGROUND OVERLAY -->
-<div class="bg-overlay"></div>
+<!-- 🔥 FUNDO -->
+<canvas id="fireCanvas"></canvas>
 
-<!-- 🧠 CONTAINER -->
 <div class="container">
 
     <!-- TÍTULO -->
-    <h1 id="titulo">Abrir Deck</h1>
+    <h1 id="titulo">Deck Arcano</h1>
+
+    <!-- ================== PESQUISA AAA ================== -->
+    <div class="search-box">
+
+        <div class="search-glow"></div>
+
+        <i class="fas fa-search icon"></i>
+
+        <input 
+            type="text" 
+            id="pesquisa" 
+            placeholder="Buscar carta, código ou deck..."
+        >
+
+    </div>
 
     <!-- DECK -->
     <div id="deck" class="deck"></div>
 
     <!-- BOTÃO -->
     <button onclick="abrirDeck()" class="btn">
-        ✨ Abrir Pack Arcano
+        ✨ Abrir Deck
     </button>
 
 </div>
 
-<!-- 🔍 MODAL (ZOOM) -->
+<!-- MODAL -->
 <div id="modal" class="modal" onclick="fecharZoom()"></div>
 
-<!-- ⚡ SCRIPT -->
+<!-- SCRIPT -->
 <script src="script.js"></script>
 
 </body>

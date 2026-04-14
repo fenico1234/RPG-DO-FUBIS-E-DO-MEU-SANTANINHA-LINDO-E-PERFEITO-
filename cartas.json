@@ -1,75 +1,104 @@
 {
   "decks": [
     {
-      "nome": "Elementos Básicos",
+      "nome": "DECK 1 — ELEMENTOS / MATÉRIA PRIMÁRIA",
       "cartas": [
-        { "tipo": "Ácido", "codigo": "DUM" },
-        { "tipo": "Água", "codigo": "QUAN" },
-        { "tipo": "Ar", "codigo": "AER" },
-        { "tipo": "Armas", "codigo": "IMPE" }
+        { "tipo": "Ácido", "codigo": "DUM", "funcao": "AS" },
+        { "tipo": "Água", "codigo": "QUAN", "funcao": "UN" },
+        { "tipo": "Ar", "codigo": "AER", "funcao": "IT" },
+        { "tipo": "Fogo", "codigo": "IG", "funcao": "AS" },
+        { "tipo": "Terra", "codigo": "MUN", "funcao": "AM" },
+
+        { "tipo": "Pedra", "codigo": "ROC", "funcao": "AM" },
+        { "tipo": "Tecido", "codigo": "TUNI", "funcao": "UN" },
+        { "tipo": "Construção", "codigo": "OMU", "funcao": "AM" },
+        { "tipo": "Parede", "codigo": "SAR", "funcao": "AM" },
+        { "tipo": "Vegetação-Flora", "codigo": "ORA", "funcao": "AM" },
+
+        { "tipo": "Clima", "codigo": "AYU", "funcao": "IT" },
+        { "tipo": "Terreno", "codigo": "ERA", "funcao": "AM" },
+        { "tipo": "Inerte", "codigo": "ITAM", "funcao": "IT" },
+        { "tipo": "Objeto Genérico", "codigo": "SIN", "funcao": "IT" }
       ]
     },
+
     {
-      "nome": "Corpo / Físico",
+      "nome": "DECK 2 — CORPO / VIDA / PERCEPÇÃO",
       "cartas": [
-        { "tipo": "Cheiro", "codigo": "KAR" },
-        { "tipo": "Corpo", "codigo": "PHYS" },
-        { "tipo": "Dimensional", "codigo": "RAT" },
-        { "tipo": "Elétrico", "codigo": "TRIZ" }
+        { "tipo": "Corpo", "codigo": "PHYS", "funcao": "AM" },
+        { "tipo": "Sangue", "codigo": "HEM", "funcao": "ES" },
+        { "tipo": "Cheiro", "codigo": "KAR", "funcao": "ES" },
+        { "tipo": "Paladar", "codigo": "GUS", "funcao": "EM" },
+        { "tipo": "Visão", "codigo": "OCUL", "funcao": "IL" },
+        { "tipo": "Sentidos", "codigo": "UNA", "funcao": "EM" },
+
+        { "tipo": "Pessoa", "codigo": "IVI", "funcao": "EM" },
+        { "tipo": "Cadáver", "codigo": "EVA", "funcao": "AS" },
+        { "tipo": "Comida", "codigo": "IBO", "funcao": "AM" },
+        { "tipo": "Aura", "codigo": "IRO", "funcao": "EM" },
+
+        { "tipo": "Sono", "codigo": "CYSG", "funcao": "AM" },
+        { "tipo": "Reflexo-Espelho", "codigo": "KAN", "funcao": "IL" }
       ]
     },
+
     {
-      "nome": "Energia / Conceitos",
+      "nome": "DECK 3 — ENERGIA / CONCEITOS / REALIDADE",
       "cartas": [
-        { "tipo": "Emoção", "codigo": "BHAS" },
-        { "tipo": "Escuridão", "codigo": "TEN" },
-        { "tipo": "Fogo", "codigo": "IG" },
-        { "tipo": "Força", "codigo": "VIB" }
+        { "tipo": "Dimensional", "codigo": "RAT", "funcao": "IT" },
+        { "tipo": "Gravidade", "codigo": "YM", "funcao": "ET" },
+        { "tipo": "Tempo", "codigo": "ANU", "funcao": "IT" },
+        { "tipo": "Ilusão", "codigo": "ALUI", "funcao": "IL" },
+        { "tipo": "Loucura", "codigo": "MOK", "funcao": "AS" },
+
+        { "tipo": "Luz", "codigo": "LUM", "funcao": "IL" },
+        { "tipo": "Escuridão", "codigo": "TEN", "funcao": "LN" },
+        { "tipo": "Necrótico", "codigo": "NECRO", "funcao": "AS" },
+
+        { "tipo": "Emoção", "codigo": "BHAS", "funcao": "EM" },
+        { "tipo": "Mente-Pensamento", "codigo": "IMU", "funcao": "EM" },
+        { "tipo": "Informação", "codigo": "AZI", "funcao": "IL" },
+        { "tipo": "Idioma", "codigo": "HIN", "funcao": "OR" },
+
+        { "tipo": "Magia", "codigo": "MAG", "funcao": "EV" },
+        { "tipo": "Veneno", "codigo": "TOX", "funcao": "AS" },
+        { "tipo": "Radiação", "codigo": "CAND", "funcao": "AS" },
+        { "tipo": "Elétrico", "codigo": "TRIZ", "funcao": "AS" },
+        { "tipo": "Força", "codigo": "VIB", "funcao": "EM" },
+
+        { "tipo": "Adição", "codigo": "AG", "funcao": "UN" },
+        { "tipo": "Derivação", "codigo": "MUT", "funcao": "ET" },
+        { "tipo": "Círculo", "codigo": "SAN", "funcao": "IT" }
       ]
     },
+
     {
-      "nome": "Estados / Abstratos",
+      "nome": "DECK 4 — AÇÃO / INTERAÇÃO / FUNÇÕES",
       "cartas": [
-        { "tipo": "Gravidade", "codigo": "YM" },
-        { "tipo": "Idioma", "codigo": "HIN" },
-        { "tipo": "Ilusão", "codigo": "ALUI" },
-        { "tipo": "Loucura", "codigo": "MOK" }
-      ]
-    },
-    {
-      "nome": "Luz / Ação",
-      "cartas": [
-        { "tipo": "Luz", "codigo": "LUM" },
-        { "tipo": "Magia", "codigo": "MAG" },
-        { "tipo": "Movimento", "codigo": "TUM" },
-        { "tipo": "Munição", "codigo": "SAG" }
-      ]
-    },
-    {
-      "nome": "Matéria / Efeitos",
-      "cartas": [
-        { "tipo": "Necrótico", "codigo": "NECRO" },
-        { "tipo": "Nojento-Secreção", "codigo": "APU" },
-        { "tipo": "Paladar", "codigo": "GUS" },
-        { "tipo": "Pedra", "codigo": "ROC" }
-      ]
-    },
-    {
-      "nome": "Fenômenos",
-      "cartas": [
-        { "tipo": "Radiação", "codigo": "CAND" },
-        { "tipo": "Reflexo-Espelho", "codigo": "KAN" },
-        { "tipo": "Sangue", "codigo": "HEM" },
-        { "tipo": "Som", "codigo": "MUL" }
-      ]
-    },
-    {
-      "nome": "Mundo Físico",
-      "cartas": [
-        { "tipo": "Sono", "codigo": "CYSG" },
-        { "tipo": "Tecido", "codigo": "TUNI" },
-        { "tipo": "Terra", "codigo": "MUN" },
-        { "tipo": "Velocidade", "codigo": "AST" }
+        { "tipo": "Armas", "codigo": "IMPE", "funcao": "EV" },
+        { "tipo": "Movimento", "codigo": "TUM", "funcao": "IT" },
+        { "tipo": "Velocidade", "codigo": "AST", "funcao": "IT" },
+
+        { "tipo": "Alterar", "codigo": "AL", "funcao": "AL" },
+        { "tipo": "Controlar", "codigo": "ET", "funcao": "ET" },
+        { "tipo": "Empoderar", "codigo": "EM", "funcao": "EM" },
+        { "tipo": "Enfraquecer", "codigo": "IN", "funcao": "IN" },
+
+        { "tipo": "Atacar-Ferir", "codigo": "IM", "funcao": "IM" },
+        { "tipo": "Destruir", "codigo": "AS", "funcao": "AS" },
+        { "tipo": "Banir", "codigo": "EN", "funcao": "EN" },
+
+        { "tipo": "Atrair-Repelir", "codigo": "IR", "funcao": "IR" },
+        { "tipo": "Juntar-Conectar", "codigo": "UN", "funcao": "UN" },
+        { "tipo": "Transmitir", "codigo": "OR", "funcao": "OR" },
+
+        { "tipo": "Invocar-Criar", "codigo": "EV", "funcao": "EV" },
+        { "tipo": "Restaurar", "codigo": "AN", "funcao": "AN" },
+        { "tipo": "Proteger", "codigo": "AM", "funcao": "AM" },
+        { "tipo": "Aprisionar", "codigo": "AR", "funcao": "AR" },
+
+        { "tipo": "Revelar", "codigo": "IL", "funcao": "IL" },
+        { "tipo": "Marcar", "codigo": "ES", "funcao": "ES" }
       ]
     }
   ]

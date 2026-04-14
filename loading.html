@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Carregando</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* FUNDO */
+.bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, rgba(120,0,40,0.2), transparent 60%);
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0%,100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.2); opacity: 1; }
+}
+
+/* TÍTULO */
+h1 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    z-index: 2;
+    text-align: center;
+}
+
+/* STATUS */
+#status {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #888;
+    z-index: 2;
+}
+
+/* LOADER */
+.loader {
+    width: 260px;
+    height: 6px;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, red, purple);
+    animation: load 4s linear forwards;
+}
+
+@keyframes load {
+    to { width: 100%; }
+}
+
+/* GLITCH */
+.glitch {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255,0,60,0.02);
+    animation: glitch 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0,0); opacity: 0.1; }
+    25% { transform: translate(2px,-2px); opacity: 0.2; }
+    50% { transform: translate(-2px,2px); opacity: 0.05; }
+    75% { transform: translate(1px,1px); opacity: 0.15; }
+    100% { transform: translate(0,0); opacity: 0.1; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="glitch"></div>
+
+<!-- 🔥 TÍTULO ATUALIZADO -->
+<h1>MANUSCRITO DAS PÁLPEBRAS</h1>
+
+<div id="status">Inicializando sistema arcano...</div>
+
+<div class="loader">
+    <div class="bar"></div>
+</div>
+
+<script>
+
+const status = document.getElementById("status");
+
+/* mensagens cinemáticas */
+setTimeout(() => {
+    status.innerText = "Conectando ao manuscrito...";
+}, 1000);
+
+setTimeout(() => {
+    status.innerText = "Interpretando páginas proibidas...";
+}, 2500);
+
+setTimeout(() => {
+    status.innerText = "Finalizando leitura...";
+}, 3500);
+
+/* redirecionamento */
+setTimeout(() => {
+    window.location.href = "./index.html";
+}, 4500);
+
+</script>
+
+</body>
+</html>
