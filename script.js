@@ -1,353 +1,229 @@
-/* ================== DECKS ================== */
+
 let decks = [
     {
-        nome: "Elementos Básicos",
+        nome: "Sistema Arcano",
         cartas: [
-            { tipo: "Ácido", codigo: "DUM", funcao: "" },
-            { tipo: "Água", codigo: "QUAN", funcao: "" },
-            { tipo: "Ar", codigo: "AER", funcao: "" },
-            { tipo: "Armas", codigo: "IMPE", funcao: "" }
-        ]
-    },
-    {
-        nome: "Corpo / Físico",
-        cartas: [
-            { tipo: "Cheiro", codigo: "KAR", funcao: "" },
-            { tipo: "Corpo", codigo: "PHYS", funcao: "" },
-            { tipo: "Dimensional", codigo: "RAT", funcao: "" },
-            { tipo: "Elétrico", codigo: "TRIZ", funcao: "" }
-        ]
-    },
-    {
-        nome: "Energia / Conceitos",
-        cartas: [
-            { tipo: "Emoção", codigo: "BHAS", funcao: "" },
-            { tipo: "Escuridão", codigo: "TEN", funcao: "" },
-            { tipo: "Fogo", codigo: "IG", funcao: "" },
-            { tipo: "Força", codigo: "VIB", funcao: "" }
-        ]
-    },
-    {
-        nome: "Estados / Abstratos",
-        cartas: [
-            { tipo: "Gravidade", codigo: "YM", funcao: "" },
-            { tipo: "Idioma", codigo: "HIN", funcao: "" },
-            { tipo: "Ilusão", codigo: "ALUI", funcao: "" },
-            { tipo: "Loucura", codigo: "MOK", funcao: "" }
-        ]
-    },
-    {
-        nome: "Luz / Ação",
-        cartas: [
-            { tipo: "Luz", codigo: "LUM", funcao: "" },
-            { tipo: "Magia", codigo: "MAG", funcao: "" },
-            { tipo: "Movimento", codigo: "TUM", funcao: "" },
-            { tipo: "Munição", codigo: "SAG", funcao: "" }
-        ]
-    },
-    {
-        nome: "Matéria / Efeitos",
-        cartas: [
-            { tipo: "Necrótico", codigo: "NECRO", funcao: "" },
-            { tipo: "Nojento-Secreção", codigo: "APU", funcao: "" },
-            { tipo: "Paladar", codigo: "GUS", funcao: "" },
-            { tipo: "Pedra", codigo: "ROC", funcao: "" }
-        ]
-    },
-    {
-        nome: "Fenômenos",
-        cartas: [
-            { tipo: "Radiação", codigo: "CAND", funcao: "" },
-            { tipo: "Reflexo-Espelho", codigo: "KAN", funcao: "" },
-            { tipo: "Sangue", codigo: "HEM", funcao: "" },
-            { tipo: "Som", codigo: "MUL", funcao: "" }
-        ]
-    },
-    {
-        nome: "Mundo Físico",
-        cartas: [
-            { tipo: "Sono", codigo: "CYSG", funcao: "" },
-            { tipo: "Tecido", codigo: "TUNI", funcao: "" },
-            { tipo: "Terra", codigo: "MUN", funcao: "" },
-            { tipo: "Velocidade", codigo: "AST", funcao: "" }
-        ]
-    },
 
-    /* ================== NOVOS ================== */
 
-    {
-        nome: "Complementos",
-        cartas: [
-            { tipo: "Veneno", codigo: "TOX", funcao: "" },
-            { tipo: "Visão", codigo: "OCUL", funcao: "" },
-            { tipo: "Adição", codigo: "AG", funcao: "" },
-            { tipo: "Derivação", codigo: "MUT", funcao: "" },
-            { tipo: "Círculo", codigo: "SAN", funcao: "" },
-            { tipo: "Objeto Genérico", codigo: "SIN", funcao: "" },
-            { tipo: "Parede", codigo: "SAR", funcao: "" },
-            { tipo: "Inerte", codigo: "ITAM", funcao: "" }
-        ]
-    },
-    {
-        nome: "Objetos / Alvos",
-        cartas: [
-            { tipo: "Aura", codigo: "IRO", funcao: "" },
-            { tipo: "Cadáver", codigo: "EVA", funcao: "" },
-            { tipo: "Comida", codigo: "IBO", funcao: "" },
-            { tipo: "Elemento", codigo: "ELI", funcao: "" },
-            { tipo: "Inanimado", codigo: "EXA", funcao: "" },
-            { tipo: "Pessoa", codigo: "IVI", funcao: "" },
-            { tipo: "Tecnologia", codigo: "INA", funcao: "" },
-            { tipo: "Terreno", codigo: "ERA", funcao: "" }
-        ]
-    },
+{ tipo: "Ácido", codigo: "DUM", categoria: "Característica" },
+{ tipo: "Água", codigo: "QUAN", categoria: "Característica" },
+{ tipo: "Ar", codigo: "AER", categoria: "Característica" },
+{ tipo: "Armas", codigo: "IMPE", categoria: "Característica" },
+{ tipo: "Cheiro", codigo: "KAR", categoria: "Característica" },
+{ tipo: "Corpo", codigo: "PHYS", categoria: "Característica" },
+{ tipo: "Dimensional", codigo: "RAT", categoria: "Característica" },
+{ tipo: "Elétrico", codigo: "TRIZ", categoria: "Característica" },
+{ tipo: "Emoção", codigo: "BHAS", categoria: "Característica" },
+{ tipo: "Escuridão", codigo: "TEN", categoria: "Característica" },
+{ tipo: "Fogo", codigo: "IG", categoria: "Característica" },
+{ tipo: "Força", codigo: "VIB", categoria: "Característica" },
+{ tipo: "Gravidade", codigo: "YM", categoria: "Característica" },
+{ tipo: "Idioma", codigo: "HIN", categoria: "Característica" },
+{ tipo: "Ilusão", codigo: "ALUI", categoria: "Característica" },
+{ tipo: "Loucura", codigo: "MOK", categoria: "Característica" },
+{ tipo: "Luz", codigo: "LUM", categoria: "Característica" },
+{ tipo: "Magia", codigo: "MAG", categoria: "Característica" },
+{ tipo: "Movimento", codigo: "TUM", categoria: "Característica" },
+{ tipo: "Munição", codigo: "SAG", categoria: "Característica" },
+{ tipo: "Necrótico", codigo: "NECRO", categoria: "Característica" },
+{ tipo: "Nojento-Secreção", codigo: "APU", categoria: "Característica" },
+{ tipo: "Paladar", codigo: "GUS", categoria: "Característica" },
+{ tipo: "Pedra", codigo: "ROC", categoria: "Característica" },
+{ tipo: "Radiação", codigo: "CAND", categoria: "Característica" },
+{ tipo: "Reflexo-Espelho", codigo: "KAN", categoria: "Característica" },
+{ tipo: "Sangue", codigo: "HEM", categoria: "Característica" },
+{ tipo: "Som", codigo: "MUL", categoria: "Característica" },
+{ tipo: "Sono", codigo: "CYSG", categoria: "Característica" },
+{ tipo: "Tecido", codigo: "TUNI", categoria: "Característica" },
+{ tipo: "Terra", codigo: "MUN", categoria: "Característica" },
+{ tipo: "Velocidade", codigo: "AST", categoria: "Característica" },
+{ tipo: "Tempo", codigo: "ANU", categoria: "Característica" },
+{ tipo: "Vegetação-Flora", codigo: "ORA", categoria: "Característica" },
 
-    {
-        nome: "Funções",
-        cartas: [
-            { tipo: "Alterar", codigo: "AL", funcao: "" },
-            { tipo: "Controlar", codigo: "ET", funcao: "" },
-            { tipo: "Empoderar", codigo: "EM", funcao: "" },
-            { tipo: "Enfraquecer", codigo: "IN", funcao: "" },
-            { tipo: "Atacar-Ferir", codigo: "IM", funcao: "" },
-            { tipo: "Destruir", codigo: "AS", funcao: "" },
-            { tipo: "Banir", codigo: "EN", funcao: "" },
-            { tipo: "Atrair-Repelir", codigo: "IR", funcao: "" },
-            { tipo: "Juntar-Conectar", codigo: "UN", funcao: "" },
-            { tipo: "Transmitir", codigo: "OR", funcao: "" },
-            { tipo: "Invocar-Criar", codigo: "EV", funcao: "" },
-            { tipo: "Restaurar", codigo: "AN", funcao: "" },
-            { tipo: "Proteger", codigo: "AM", funcao: "" },
-            { tipo: "Aprisionar", codigo: "AR", funcao: "" },
-            { tipo: "Revelar", codigo: "IL", funcao: "" },
-            { tipo: "Marcar", codigo: "ES", funcao: "" }
+
+{ tipo: "Alterar", codigo: "AL", categoria: "Função" },
+{ tipo: "Aprisionar", codigo: "AR", categoria: "Função" },
+{ tipo: "Atacar-Ferir", codigo: "IM", categoria: "Função" },
+{ tipo: "Atrair-Repelir", codigo: "IR", categoria: "Função" },
+{ tipo: "Banir", codigo: "EN", categoria: "Função" },
+{ tipo: "Controlar", codigo: "ET", categoria: "Função" },
+{ tipo: "Destruir", codigo: "AS", categoria: "Função" },
+{ tipo: "Empoderar", codigo: "EM", categoria: "Função" },
+{ tipo: "Enfraquecer", codigo: "IN", categoria: "Função" },
+{ tipo: "Invocar-Criar", codigo: "EV", categoria: "Função" },
+{ tipo: "Juntar-Conectar", codigo: "UN", categoria: "Função" },
+{ tipo: "Marcar", codigo: "ES", categoria: "Função" },
+{ tipo: "Proteger", codigo: "AM", categoria: "Função" },
+{ tipo: "Restaurar", codigo: "AN", categoria: "Função" },
+{ tipo: "Revelar", codigo: "IL", categoria: "Função" },
+{ tipo: "Transmitir", codigo: "OR", categoria: "Função" },
+
+{ tipo: "Veneno", codigo: "TOX", categoria: "Complemento" },
+{ tipo: "Visão", codigo: "OCUL", categoria: "Complemento" },
+{ tipo: "Adição", codigo: "AG", categoria: "Complemento" },
+{ tipo: "Derivação", codigo: "MUT", categoria: "Complemento" },
+{ tipo: "Círculo", codigo: "SAN", categoria: "Complemento" },
+{ tipo: "Objeto Genérico", codigo: "SIN", categoria: "Complemento" },
+{ tipo: "Parede", codigo: "SAR", categoria: "Complemento" },
+{ tipo: "Inerte", codigo: "ITAM", categoria: "Complemento" },
+{ tipo: "Maior", codigo: "MOR", categoria: "Complemento" },
+{ tipo: "Menor", codigo: "MIN", categoria: "Complemento" },
+{ tipo: "Negação", codigo: "NO", categoria: "Complemento" },
+{ tipo: "Variação", codigo: "ADA", categoria: "Complemento" },
+
+
+{ tipo: "Aura", codigo: "IRO", categoria: "Objeto" },
+{ tipo: "Cadáver", codigo: "EVA", categoria: "Objeto" },
+{ tipo: "Clima", codigo: "AYU", categoria: "Objeto" },
+{ tipo: "Comida", codigo: "IBO", categoria: "Objeto" },
+{ tipo: "Construção", codigo: "OMU", categoria: "Objeto" },
+{ tipo: "Elemento", codigo: "ELI", categoria: "Objeto" },
+{ tipo: "Explosão", codigo: "EPI", categoria: "Objeto" },
+{ tipo: "Inanimado", codigo: "EXA", categoria: "Objeto" },
+{ tipo: "Informação", codigo: "AZI", categoria: "Objeto" },
+{ tipo: "Mente-Pensamento", codigo: "IMU", categoria: "Objeto" },
+{ tipo: "Pessoa", codigo: "IVI", categoria: "Objeto" },
+{ tipo: "Sentidos", codigo: "UNA", categoria: "Objeto" },
+{ tipo: "Tecnologia", codigo: "INA", categoria: "Objeto" },
+{ tipo: "Terreno", codigo: "ERA", categoria: "Objeto" }
+
         ]
     }
 ];
-/* ================== CONTROLE ================== */
-let deckAtual = 0;
+
+
+
 const deckEl = document.getElementById("deck");
 const titulo = document.getElementById("titulo");
+const inputBusca = document.getElementById("pesquisa");
 
-/* ================== CARTA ================== */
-function criarCarta(carta, index = 0, container = deckEl) {
+const montagemEl = document.createElement("div");
+montagemEl.id = "montagem";
+
+const resultadosEl = document.createElement("div");
+resultadosEl.id = "resultados";
+
+deckEl.appendChild(montagemEl);
+deckEl.appendChild(resultadosEl);
+
+
+let montagemAtual = [];
+let cartasSelecionadas = new Set();
+
+titulo.innerText = "Digite para buscar";
+
+function criarCarta(carta) {
 
     const el = document.createElement("div");
     el.className = "card";
 
-    /* 🔥 RARIDADE APLICADA */
-    el.classList.add(carta.raridade || "comum");
-
-    /* 🔥 FOGO AZUL (ADICIONADO) */
-    el.classList.add("fogo");
-
     el.innerHTML = `
         <div class="inner">
-            <div class="face frente">
-                <div class="funcao-top">FUNÇÃO ${carta.funcao || ""}</div>
+            <div class="frente">
+                <div class="categoria">${carta.categoria}</div>
                 <div class="codigo">${carta.codigo}</div>
                 <div class="tipo">${carta.tipo}</div>
             </div>
-            <div class="face verso"></div>
         </div>
     `;
 
-    container.appendChild(el);
+    el.onclick = () => adicionarNaMontagem(carta);
 
-    const delay = index * 100;
-
-    /* estado inicial */
-    el.style.opacity = "0";
-    el.style.transform = "translateY(40px) scale(0.8)";
-    el.style.filter = "blur(8px)";
-
-    /* entrada suave */
-    setTimeout(() => {
-        el.style.transition = "all 0.5s ease";
-        el.style.opacity = "1";
-        el.style.transform = "translateY(0) scale(1)";
-        el.style.filter = "blur(0)";
-    }, delay);
-
-    /* CLICK */
-    el.addEventListener("click", (e) => {
-        e.stopPropagation();
-        abrirZoom(carta);
-    });
-
-    /* reveal */
-    setTimeout(() => {
-        el.classList.add("revelada");
-    }, delay + 150);
-
-    /* ================== TILT 3D ================== */
-    let rotX = 0;
-    let rotY = 0;
-
-    el.addEventListener("mousemove", (e) => {
-
-        const rect = el.getBoundingClientRect();
-        const x = (e.clientX - rect.left) / rect.width - 0.5;
-        const y = (e.clientY - rect.top) / rect.height - 0.5;
-
-        rotX = y * -10;
-        rotY = x * 10;
-
-        el.style.transform = `
-            translateY(0)
-            scale(1.05)
-            perspective(800px)
-            rotateX(${rotX}deg)
-            rotateY(${rotY}deg)
-        `;
-    });
-
-    el.addEventListener("mouseleave", () => {
-        el.style.transform = `
-            translateY(0)
-            scale(1)
-            perspective(800px)
-            rotateX(0deg)
-            rotateY(0deg)
-        `;
-    });
+    resultadosEl.appendChild(el);
 }
 
-/* ================== ABRIR DECK ================== */
-function abrirDeck() {
 
-    if (deckAtual >= decks.length) {
-        alert("Todos os decks foram abertos!");
-        return;
-    }
-
-    deckEl.innerHTML = "";
-
-    const deck = decks[deckAtual];
-    titulo.innerText = deck.nome;
-
-    deck.cartas.forEach((carta, i) => {
-        criarCarta(carta, i);
-    });
-
-    deckAtual++;
-}
-
-/* ================== PESQUISA ================== */
 function pesquisarCarta(valor) {
 
     const busca = valor.toLowerCase().trim();
+    if (!busca) return;
 
-    if (!busca) {
-        deckEl.innerHTML = "";
-        deckAtual = 0;
-        return;
-    }
-
-    deckEl.innerHTML = "";
+    resultadosEl.innerHTML = "";
     titulo.innerText = "Resultado da busca";
 
-    if (!isNaN(busca)) {
-        const index = parseInt(busca) - 1;
+    const base = decks[0].cartas;
 
-        if (decks[index]) {
-            titulo.innerText = `Deck ${busca} - ${decks[index].nome}`;
-
-            decks[index].cartas.forEach((carta, i) => {
-                criarCarta(carta, i);
-            });
-            return;
-        }
-    }
-
-    let resultados = [];
-
-    decks.forEach(deck => {
-        deck.cartas.forEach(carta => {
-            if (
-                carta.tipo.toLowerCase().includes(busca) ||
-                carta.codigo.toLowerCase().includes(busca)
-            ) {
-                resultados.push(carta);
-            }
-        });
-    });
+    const resultados = base.filter(c =>
+        c.tipo.toLowerCase().includes(busca) ||
+        c.codigo.toLowerCase().includes(busca) ||
+        c.categoria.toLowerCase().includes(busca)
+    );
 
     if (resultados.length === 0) {
-        deckEl.innerHTML = `<p style="opacity:0.5">Nenhuma carta encontrada...</p>`;
+        resultadosEl.innerHTML = `<p style="opacity:0.5">Nenhuma carta encontrada...</p>`;
         return;
     }
 
-    resultados.forEach((carta, i) => {
-        criarCarta(carta, i);
-    });
+    resultados.forEach(criarCarta);
 }
 
-/* ================== MODAL ================== */
-function abrirZoom(carta) {
-
-    const modal = document.getElementById("modal");
-
-    modal.innerHTML = `
-        <div class="zoom-card" onclick="event.stopPropagation()">
-            <h2>${carta.codigo}</h2>
-            <p>${carta.tipo}</p>
-            <p><b>Função:</b> ${carta.funcao || "-"}</p>
-        </div>
-    `;
-
-    modal.classList.add("ativo");
-}
-
-function fecharZoom() {
-    document.getElementById("modal").classList.remove("ativo");
-}
-
-/* ================== LOOTBOX ================== */
-function abrirPack() {
-
-    if (deckAtual >= decks.length) {
-        alert("Todos os decks foram abertos!");
-        return;
+inputBusca.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        pesquisarCarta(inputBusca.value);
     }
+});
 
-    deckEl.innerHTML = "";
-    titulo.innerText = "Abrindo Pack...";
+function adicionarNaMontagem(carta) {
 
-    const deck = decks[deckAtual];
-    const cartas = [...deck.cartas].sort(() => Math.random() - 0.5);
+    if (cartasSelecionadas.has(carta.codigo)) return;
 
-    cartas.forEach((carta, i) => {
-        setTimeout(() => {
-            criarCarta(carta, i);
-        }, i * 500);
-    });
+    montagemAtual.push(carta);
+    cartasSelecionadas.add(carta.codigo);
 
-    deckAtual++;
-}
+    // 🔥 animação visual na carta clicada
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(c => {
+        if (c.innerText.includes(carta.codigo)) {
+            c.classList.add("selecting");
 
-/* ================== ENTER ================== */
-const inputBusca = document.getElementById("pesquisa");
-
-if (inputBusca) {
-    inputBusca.addEventListener("keydown", (e) => {
-
-        if (e.key === "Enter") {
-
-            const valor = inputBusca.value.trim();
-
-            if (!isNaN(valor) && valor !== "") {
-                const index = parseInt(valor) - 1;
-
-                if (decks[index]) {
-                    deckAtual = index;
-                    deckEl.innerHTML = "";
-                    abrirDeck();
-                    return;
-                }
-            }
-
-            pesquisarCarta(valor);
+            setTimeout(() => {
+                c.classList.remove("selecting");
+            }, 450);
         }
     });
+
+    renderMontagem();
 }
+
+function removerCarta(codigo) {
+
+    cartasSelecionadas.delete(codigo);
+    montagemAtual = montagemAtual.filter(c => c.codigo !== codigo);
+
+    renderMontagem();
+}
+
+
+
+function renderMontagem() {
+
+    montagemEl.innerHTML = "";
+
+    titulo.innerText =
+        montagemAtual.length === 0
+            ? "Monte sua carta (0)"
+            : `Montagem: ${montagemAtual.length} → ` +
+              montagemAtual.map(c => c.codigo).join(" → ");
+
+    montagemAtual.forEach((item) => {
+
+        const el = document.createElement("div");
+        el.className = "card selected";
+
+        el.innerHTML = `
+            <div class="inner">
+                <div class="frente">
+                    <div class="categoria">${item.categoria}</div>
+                    <div class="codigo">${item.codigo}</div>
+                    <div class="tipo">${item.tipo}</div>
+                </div>
+            </div>
+        `;
+
+        el.onclick = () => removerCarta(item.codigo);
+
+        montagemEl.appendChild(el);
+    });
+}
+
+renderMontagem();
